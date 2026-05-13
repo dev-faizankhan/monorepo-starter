@@ -1,0 +1,31 @@
+{
+  "name": "monorepo-starter",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/api",
+    "apps/webapp"
+  ],
+  "scripts": {
+    "// Development": "",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:webapp\"",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:webapp": "echo \"webapp not yet scaffolded\"",
+    "// Production": "",
+    "start": "npm run start --workspace=apps/api",
+    "// Testing": "",
+    "test": "npm run test --workspaces --if-present",
+    "test:api": "npm run test --workspace=apps/api",
+    "// Utilities": "",
+    "install:all": "npm install --workspaces",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "npm run format --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=8.0.0"
+  }
+}

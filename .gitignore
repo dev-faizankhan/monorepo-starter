@@ -1,0 +1,48 @@
+node_modules/
+yarn-error.log
+yarn.lock
+npm-debug.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Build / Output directories
+build/
+dist/
+release-builds/
+
+.cache/
+.next/
+out/
+.yarn/
+
+# Logs
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Archives
+*.zip
+*.tar.gz
+
+# SSH Keys - NEVER commit these!
+*.pem
+*.key
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
